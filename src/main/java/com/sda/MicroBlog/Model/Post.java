@@ -1,9 +1,13 @@
 package com.sda.MicroBlog.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class Post {
 
+    @Id
     private Long id;
     private String title;
     private String body;

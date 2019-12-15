@@ -1,10 +1,16 @@
 package com.sda.MicroBlog.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name = "users")
 public class User {
 
+    @Id
     private Long id;
     private String username;
     private String email;
